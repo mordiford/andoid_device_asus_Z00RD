@@ -28,6 +28,10 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_KERNEL_SOURCE := kernel/Z00RD
 TARGET_KERNEL_CONFIG := ze500kg_defconfig
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9-kernel/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
